@@ -17,18 +17,10 @@ nodes:
     protocol: TCP
 - role: worker
   labels:
-    disktype: ssd
-  extraMounts:
-  - hostPath: /moss/home/Projects/kubernetes/files/worker1
-    containerPath: /files
-    propagation: Bidirectional
+    gpu: integrated
 - role: worker
   labels:
     gpu: gtx
-  extraMounts:
-  - hostPath: /moss/home/Projects/kubernetes/files/worker2
-    containerPath: /files
-    propagation: Bidirectional
 containerdConfigPatches:
 - |-
   [plugins."io.containerd.grpc.v1.cri".registry.mirrors."localhost:5000"]
