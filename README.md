@@ -1,5 +1,5 @@
 ## the plan
-1. Install all the required pieces (docker, KiND)
+1. Install KiND
 2. Optionally install Lens and Insomnia
 3. Look at the Springboot app
 4. Look at the React app
