@@ -3,7 +3,7 @@ $HOME/Tools/Kind/kind create cluster --config="./cluster.yaml"
 
 docker network connect "kind" "registry"
 
-for node in $(kind get nodes); do
+for node in $($HOME/Tools/Kind/kind get nodes); do
   kubectl annotate node "${node}" "kind.x-k8s.io/registry=localhost:5000";
 done
 

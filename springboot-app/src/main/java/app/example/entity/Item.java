@@ -8,14 +8,14 @@ import java.util.UUID;
 import java.util.Date;
 
 public class Item implements RepoObj<UUID> {
-  private UUID itemId = new UUID(0L, 0L);
-  private String title = "";
+	private UUID itemId = new UUID(0L, 0L);
+	private String title = "";
 
-  public UUID getItemId() {
+  	public UUID getItemId() {
 		return itemId;
 	}
 
-  public String getTitle() {
+  	public String getTitle() {
 		return title;
 	}
 
@@ -28,6 +28,6 @@ public class Item implements RepoObj<UUID> {
 	}
 
 	public UUID getPrimary() {
-  	return itemId;
+  		return itemId;
 	}
 }
