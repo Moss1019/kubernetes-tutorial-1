@@ -4,4 +4,4 @@ COPY ./server/public /var/app/
 
 EXPOSE 3000
 
-ENTRYPOINT ["node", "/var/app.js"]
+ENTRYPOINT ["node", "/var/app/app.js"]
