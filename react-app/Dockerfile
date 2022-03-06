@@ -1,7 +1,7 @@
 FROM node
 
-COPY ./server /var/app/
+COPY ./server/public /var/app/
 
-EXPOSE 3001
+EXPOSE 3000
 
-ENTRYPOINT ["node", "/var/app/app.js"]
+ENTRYPOINT ["node", "/var/app.js"]

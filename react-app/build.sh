@@ -1,6 +1,5 @@
 
-rm -r ./server/public
-
+cd ./server
+npm ic
 npm run build
-
-mv ./build/ ./server/public/
+cd ..
